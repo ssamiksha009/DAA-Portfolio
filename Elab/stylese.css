@@ -1,0 +1,35 @@
+body {
+    background-color: black; /* Setting black background color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans text style */
+}
+
+.big-title {
+    margin-top: 50px; /* Leave some space from the top */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+}
+
+.container {
+    text-align: center; /* Center container content */
+}
+
+.animated-border {
+    border: 5px solid transparent; /* Thicker border */
+    border-radius: 10px;
+    animation: border-animation 2s infinite linear; /* Change animation to linear for smooth movement */
+}
+
+@keyframes border-animation {
+    0% {
+        transform: translateX(0); /* Start position */
+        border-color: red;
+    }
+    50% {
+        transform: translateX(50px); /* Move 50 pixels to the right */
+        border-color: red;
+    }
+    100% {
+        transform: translateX(0); /* Back to start position */
+        border-color: red;
+    }
+}

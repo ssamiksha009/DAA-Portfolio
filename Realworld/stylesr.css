@@ -1,0 +1,99 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.big-title {
+    font-size: 36px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000; /* Red color */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.section-title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 50px; /* Add margin top for spacing */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.video {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Center and add margin */
+}
+
+.video-description {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; /* Change font family */
+    font-size: 20px; /* Increase font size */
+    margin: 20px auto; /* Center and add margin */
+}
+
+.output-image{
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Center and add margin */
+    animation: glow 2s infinite alternate; /* Apply animation */
+} 
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Add margin to move the button further down */
+}
+
+.reference-link {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.reference-link:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 5px #ff0000; /* Initial shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #ff0000; /* Intermediate shadow */
+    }
+    100% {
+        box-shadow: 0 0 10px 5px #ff0000; /* Final shadow */
+    }
+}
+
+@keyframes glow-white {
+    0% {
+        box-shadow: 0 0 10px 5px #fff; /* Initial shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #fff; /* Intermediate shadow */
+    }
+    100% {
+        box-shadow: 0 0 10px 5px #fff; /* Final shadow */
+    }
+}
+
+.reference-image {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto; /* Center and add margin */
+    animation: glow-white 2s infinite alternate; /* Apply animation */
+}

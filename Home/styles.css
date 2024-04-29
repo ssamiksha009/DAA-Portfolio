@@ -1,0 +1,292 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tabs Section */
+.tabs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs ul li {
+  display: inline;
+  margin-right: 20px;
+  position: relative; /* Required for positioning the underline */
+}
+
+.tabs ul li a {
+  text-decoration: none;
+  color: #ff4646; /* Red text */
+  font-size: 18px;
+  position: relative; /* Required for positioning the underline */
+}
+
+.tabs ul li a:hover {
+  color: #ff8787; /* Lighter shade of red on hover */
+}
+
+/* Underline Animation */
+.tabs ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff; /* White underline */
+  left: 0;
+  bottom: -2px; /* To hide initially */
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.tabs ul li a:hover::after {
+  width: 100%; /* Show full width on hover */
+}
+
+
+/* About Me Section */
+.about-me {
+  margin-top: 50px;
+  margin-bottom: 50px; /* Add margin bottom for space */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+}
+
+.about-text {
+  flex: 1;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f1eeee;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f8f8f8;
+  font-style: italic; /* Add italic style */
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  max-width: 250px;
+  margin-left: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Reddish-white glow */
+}
+
+
+/* Featured Projects Section */
+.featured-projects {
+  padding: 20px;
+  margin-bottom: 50px; /* Add margin bottom for space */
+}
+
+.featured-projects h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.project {
+  width: calc(33.33% - 20px); /* Set width for three projects in a row with spacing */
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin right for spacing between projects */
+  vertical-align: top; /* Align project boxes to top */
+  margin-bottom: 20px; /* Add margin bottom for spacing between rows */
+}
+
+.project:nth-child(3n) {
+  margin-right: 0px; /* Remove margin right for the last project in each row */
+}
+
+.project-box {
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px;
+  min-height: 300px; /* Set a minimum height for each project box */
+  position: relative;
+  background-color: #8B0000; /* Dark red background color */
+}
+
+.project-box:hover .project-title {
+  color: #f83b3b; /* Dark red color for the project title */
+}
+
+.project-title {
+  text-decoration: none;
+  color: #fff; /* White color for the project title */
+  font-size: 18px;
+  font-weight: bold;
+  display: block; /* Make the title a block element for better styling */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+.project-title:hover {
+  color: #f5d6d6; /* Dark red color for the project title on hover */
+}
+
+.project-box img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-box p {
+  font-size: 16px;
+  color: #fff; /* White color for description text */
+  line-height: 1.6; /* Adjust line height for better readability */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Contact Us Section */
+.contact {
+  margin-top: 50px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ff4646; /* Red border */
+  background-color: #444; /* Darker shade of black */
+  color: #fff; /* White text */
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #ff4646; /* Red button */
+  color: #fff; /* White text */
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #ff8787; /* Lighter shade of red on hover */
+}
+
+.contact-icons a {
+  color: #fff; /* Set text color to white */
+}
+
+/* Big Text Styles */
+.big-text {
+  display: inline-block;
+  margin-right: 20px; /* Add margin between big texts */
+  font-size: 24px; /* Set font size */
+}
+
+/* Different Font Styles */
+.font1 {
+  font-family: "Arial", sans-serif;
+  color: #ff4646; /* Red color */
+}
+
+.font2 {
+  font-family: "Times New Roman", serif;
+  color: #ff8787; /* Light red color */
+}
+
+.font3 {
+  font-family: "Courier New", monospace;
+  color: #fff; /* White color */
+}
+
+/* Education section styles */
+#education {
+  padding: 20px 0; /* Adjusted padding */
+}
+
+.section-title {
+  font-size: 24px; /* Decreased font size */
+  font-weight: bold;
+  color: #fff; /* White text */
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+.education-details {
+  font-size: 16px; /* Decreased font size */
+  color: #fff; /* White text */
+}
+
+.education-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.education-row p {
+  margin: 0;
+}
+
+.education-year {
+  color: #ff0000; /* Red text */
+  animation: redTextAnimation 2s infinite alternate; /* Animation for red text */
+}
+
+@keyframes redTextAnimation {
+  0% {
+      color: #ff0000;
+  }
+  50% {
+      color: #cc0000; /* Darker red */
+  }
+  100% {
+      color: #ff0000;
+  }
+}
+
+/* Add style for the brackets */
+.brackets {
+  color: #666; /* Gray text */
+}
+
+.spacer {
+  flex-grow: 1; /* Allow the spacer to grow and take up space */
+}
+
+/* Thick red line divider */
+.red-divider {
+  width: 100%;
+  height: 5px;
+  background-color: #ff0000; /* Red color */
+  margin: 50px 0;
+}
+
+
+

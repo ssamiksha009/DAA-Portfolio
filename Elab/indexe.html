@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLab Completion Status</title>
+    <link rel="stylesheet" href="stylese.css">
+    <style>
+        body {
+            background-color: black; /* Setting black background color */
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans text style */
+        }
+
+        .big-title {
+            margin-top: 50px; /* Leave some space from the top */
+            color: white; /* Text color */
+            text-align: center; /* Center the text */
+        }
+
+        .container {
+            text-align: center; /* Center container content */
+        }
+
+        .animated-border {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            animation: border-animation 2s infinite alternate; /* Animation for border */
+        }
+
+        @keyframes border-animation {
+            0% {
+                border-color: red;
+            }
+            100% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="big-title">eLab Completion Status</h1>
+        <!-- Space -->
+        <br><br>
+        <!-- Image with animated border -->
+        <img src="elab.jpg" alt="Lab Picture" class="animated-border">
+    </div>
+</body>
+</html>

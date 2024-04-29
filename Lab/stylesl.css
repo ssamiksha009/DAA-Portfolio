@@ -1,0 +1,29 @@
+body {
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.huge-heading {
+    font-size: 48px; /* Set font size */
+    font-family: 'Comic Sans MS', cursive; /* Set font family */
+    color: #fff; /* White text */
+}
+
+.image-container {
+    display: inline-block;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow */
+}
+
+.lab-image {
+    width: 80%; /* Set width */
+    max-width: 800px; /* Set max width */
+    height: auto;
+}

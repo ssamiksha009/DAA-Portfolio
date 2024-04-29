@@ -1,0 +1,54 @@
+body {
+    background-color: black; /* Setting black background color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans text style */
+    color: white; /* Text color */
+}
+
+.big-title {
+    margin-top: 50px; /* Leave some space from the top */
+    text-align: center; /* Center the text */
+}
+
+.container {
+    text-align: center; /* Center container content */
+}
+
+.img-container {
+    display: inline-block; /* Make container inline */
+    border: 2px solid transparent; /* Initial border */
+    border-radius: 10px; /* Rounded border */
+    animation: border-animation 2s infinite alternate; /* Animation for border */
+}
+
+.img-container img {
+    max-width: 1000px; /* Set maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: red; /* Start color */
+    }
+    100% {
+        border-color: transparent; /* End color */
+    }
+}
+
+.description {
+    text-align: left; /* Align text to left */
+    margin: 20px auto; /* Center the description */
+    max-width: 600px; /* Limit width of description */
+}
+
+.description p {
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.description ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.description li {
+    margin-bottom: 5px; /* Add space between list items */
+}

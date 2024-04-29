@@ -1,0 +1,80 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    animation: backgroundAnimation 10s infinite alternate; /* Background animation */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #000; /* Black background */
+    }
+    50% {
+        background-color: #333; /* Darker background */
+    }
+    100% {
+        background-color: #000; /* Black background */
+    }
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.big-title {
+    font-size: 36px;
+    font-family: 'Comic Sans MS', cursive;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    animation: textAnimation 5s infinite; /* Text animation */
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.certification-image {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Animated red border */
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px; /* Increased thickness */
+    background-color: #ff0000; /* Red border */
+    animation: borderAnimation 2s infinite linear; /* Border animation */
+}
+
+.container::before {
+    top: 0;
+}
+
+
+
+@keyframes borderAnimation {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
